@@ -8,12 +8,12 @@ const Feed = () => {
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
         sx={{
-          height: { sx: "auto", md: "92vh" },
+          height: { sx: "auto", md: "auto" },
           borderRight: "1px solid #3d3d3d",
           px: { sx: 0, md: 2 },
         }}
       >
-      ,<Sidebarbar></Sidebar>
+      <Sidebar />
         <Typography
           className="copyright"
           variant="body2"
