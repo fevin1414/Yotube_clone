@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Sidebar from "./Sidebar";
+import Videos from "./Videos";
 
 const Feed = () => {
   return (
@@ -13,7 +14,7 @@ const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-      <Sidebar />
+        <Sidebar />
         <Typography
           className="copyright"
           variant="body2"
@@ -21,6 +22,17 @@ const Feed = () => {
         >
           Copyright 2023 Fevin Biju
         </Typography>
+      </Box>
+      <Box p={2} sx={{ overflow: "auto", height: "90vh", flex: 2 }}>
+        <Typography
+          variant="h4"
+          fontweight="bold"
+          mb={2}
+          sx={{ color: "white" }}
+        >
+          New <span style={{ color: "#F31503" }}> Videos</span>
+        </Typography>
+        <Videos videos={[]}/>
       </Box>
     </Stack>
   );
