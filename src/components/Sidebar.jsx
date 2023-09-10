@@ -17,14 +17,14 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         className="category-btn"
         onClick={() => setSelectedCategory(category.name)}
         style={{
-          background: category.name === selectedCategory && "#FC1503",
-          color: "white",
+          background: category.name === selectedCategory && "black",
+          color: category.name === selectedCategory ? "white" : "black",
         }}
         key={category.name}
       >
         <span
           style={{
-            color: category.name === selectedCategory ? "white" : "red",
+            color: category.name === selectedCategory ? "white" : "black",
             marginRight: "15px",
           }}
         >

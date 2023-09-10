@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./images/logo1.png";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
